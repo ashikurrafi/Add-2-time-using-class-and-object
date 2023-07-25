@@ -39,6 +39,7 @@ void Time::get_Time()
     cin >> minute;
     cout << "Enter hour : ";
     cin >> hour;
+
 }
 
 void Time::show_Time()
@@ -66,7 +67,10 @@ int main()
     Time time_1;
     Time time_2;
     Time time_3;
+    cout << "Enter timne 1 : " << endl;
     time_1.get_Time();
+    cout << endl;
+    cout << "Enter timne 2 : " << endl;
     time_2.get_Time();
     time_3.calculate_Time(time_1, time_2);
     time_3.show_Time();
